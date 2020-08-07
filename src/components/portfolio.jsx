@@ -12,28 +12,59 @@ import {
         return (
           <Router>
             <div>
-              <nav>
-                <ul>
-                  <li>
-                    <Link to="/">Home</Link>
-                  </li>
-                  <li>
-                    <Link to="/about">About</Link>
-                  </li>
-                  <li>
-                    <Link to="/users">Users</Link>
-                  </li>
-                </ul>
-              </nav>
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                  <a class="navbar-brand">
+                
+                    
+                  </a>
+        
+                 <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapsibleNavbar"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
       
-              {/* A <Switch> looks through its children <Route>s and
-                  renders the first one that matches the current URL. */}
+                  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="navbar-brand">
+                        <Link to="/"><p style={{ color:'#BBE3CF' }}>Home</p></Link>
+                  
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="navbar-brand">
+                        <Link to="/portf"><p style={{ color:'#BBE3CF' }}>Portfolio</p></Link>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="navbar-brand">
+                        <Link to="/about"><p style={{ color:'#BBE3CF' }}>About</p></Link>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="navbar-brand">
+                        <Link to="/contact"><p style={{ color:'#BBE3CF' }}>Contact</p></Link>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+
+            
+      
               <Switch>
                 <Route path="/about">
                   <About />
                 </Route>
-                <Route path="/users">
-                  <Users />
+                <Route path="/portf">
+                  <Portfolio />
+                </Route>
+                <Route path="/contact">
+                  <Contact/>
                 </Route>
                 <Route path="/">
                   <Home />
@@ -45,15 +76,54 @@ import {
       }
       
       function Home() {
-        return <h2>Home</h2>;
+  
+        return(
+            <React.Fragment>
+               
+              <div class="head">
+                <h1> Header</h1>
+              </div>
+      
+              <div>
+                <h1> BODY</h1>
+              </div>
+              <div class="spinner-border text-success"></div>
+      
+              <div>
+                <h1>Footer</h1>
+                
+              </div>
+      
+            </React.Fragment>
+          );
+        
       }
       
       function About() {
         return <h2>About</h2>;
       }
+      function Portfolio() {
+        return (
+          <React.Fragment>
+               
+          <div class="head">
+            Coming soon
+          </div>
+  
+          <div>
+            
+          </div>
+  
+          <div>
+            
+          </div>
+  
+        </React.Fragment>
+        );
+      }
       
-      function Users() {
-        return <h2>Users</h2>;
+      function Contact() {
+        return <h2>Conatct</h2>;
       }
      
 
