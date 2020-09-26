@@ -1,0 +1,222 @@
+.photo {
+    height: 125px;
+    width: 125px;
+  }
+
+
+
+.head {
+  
+    padding-top: 40px;
+    padding-bottom: 50px;
+    
+    
+}
+body{
+  background: #c1e1c5;
+}
+
+.socialdiv{
+  background: #eeeeee;
+  padding: 15.5px;
+  text-align: center;
+}
+
+
+
+a.social{
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.socialabout{
+  margin: 0 0.5rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+a.social:hover{
+  transform: translateY(-3px);
+  
+}
+a.socialabout:hover{
+  transform: translateY(-3px);
+  
+}
+
+a.git {
+  color:#3E2C00;
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.skype {
+  color: #00aff0;
+}
+
+a.linkedin{
+  color: #0e76a8;
+}
+
+.float-container {
+  display: flex;
+  text-align: justify;
+  border: 3px solid #fff;
+  padding: 0px;
+  /*padding-left: 65px;*/
+  margin: 15px;
+  height: 800px;
+  
+}
+
+
+.float-child {
+  width: 235px;
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 5px;
+  padding: 15px;
+  height: 300px;
+  
+  border: 1px solid red;
+}
+
+.float-chd1 {
+  width: 195px;
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 0px;
+  height: 195px;
+  border-radius: 90px;
+  border: 1px solid red;
+}
+
+.float-chd2 {
+  width: 215px;
+  margin-top: 15px;
+  margin-left: 0px;
+  padding: 0px;
+  text-align: center;
+  height: 60px;
+  border: 1px solid red;
+}
+
+.float-child3 {
+  width: 70%;
+  height: 180px;
+  
+  text-align: justify;
+  margin-top: 5px;
+  margin-left: 0px;
+  padding-left: 50px;
+  border: 1px solid red;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
+    min-width: 50%;
+    max-width: 70%;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=textarea]
+  {
+    width: 100%;
+    height:230px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+
+
+
+.portfol
+{
+  text-align: center;
+
+  
+}
+
+.joke
+{
+  background-color: #3E2C00;
+  border-radius: 20px;
+
+}
+
+.portjhomeimg
+{
+  width: 200px;
+  height: 130px;
+}
+
+.blood
+{
+  background-color: #4CAF50;
+  border-radius: 20px;
+  float: center;
+  
+}
+
+.ecommerce
+{
+  background-color: #391194;
+  border-radius: 20px;
+  float: right;
+}
+
+.jscreen
+{
+  padding-left: 2px;
+  
+}
+
+.portjhomeimg {
+  height: 180px;
+  width: 280px;
+  padding-top: 10px;
+  float: left;
+}
+@media (
+  max-width: 600px
+){
+.float-container{
+  flex-direction: column;
+  }
+.float-child{
+  width: 100%
+}
+}

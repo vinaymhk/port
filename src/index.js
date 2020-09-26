@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import 'popper.js/dist/popper.js';
 import * as serviceWorker from './serviceWorker';
+// import 'bootstrap/dist/js/jQuery.js';
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
+
+
 //import Home from './components/home';
 import Portfolio from './components/portfolio'
 

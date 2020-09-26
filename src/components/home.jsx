@@ -22,7 +22,7 @@ class Home extends Component {
             <a class="navbar-brand" href="home.jsx">
               Home
             </a>
-
+  
             <button
               class="navbar-toggler"
               type="button"
